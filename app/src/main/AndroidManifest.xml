@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="eu.allan.apps.manlyminder2">
+
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".ActivityMain">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".ActivitySettings">
+        </activity>
+        <activity android:name=".ActivityBirthday">
+        </activity>
+        <activity android:name=".ActivityValentines">
+        </activity>
+        <activity android:name=".ActivityAnniversary">
+        </activity>
+        <activity android:name=".ActivityPms">
+        </activity>
+        <activity android:name=".ActivityFlowers">
+        </activity>
+        <activity android:name=".MyDatePicker">
+        </activity>
+        <activity android:name=".ActivityAnniversaryAdd">
+        </activity>
+        <activity android:name=".ActivityBuy">
+        </activity>
+        <service
+            android:name="._TestJobService"
+            android:label="Manly Minder Service"
+            android:permission="android.permission.BIND_JOB_SERVICE" >
+
+        </service>
+        <service
+            android:name="._MainService"
+            android:label="Manly Minder Main Service"
+            android:permission="android.permission.BIND_JOB_SERVICE" >
+
+        </service>
+
+        <receiver android:name="._MyStartServiceReceiver" >
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+            </intent-filter>
+        </receiver>
+    </application>
+
+</manifest>

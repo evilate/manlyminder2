@@ -1,0 +1,220 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/main_background_3">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <RelativeLayout
+                    android:id="@+id/vd_1"
+                    android:layout_width="match_parent"
+                    android:layout_height="600dp"
+                    android:background="@drawable/layout_activity_settings_bg"
+                    android:padding="3dp"
+                    android:layout_margin="13dp">
+
+
+                    <ImageView
+                        android:id="@+id/vd_iv_1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginRight="4dp"
+                        android:alpha=".75"
+                        android:background="@null"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/black_1" />
+                    <LinearLayout
+                        android:id="@+id/vd_settings_main_box_1"
+                        android:layout_alignStart="@+id/vd_iv_1"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+                        <TextView
+                            android:id="@+id/tv_inkognito"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textSize="20dp"
+                            android:textColor="#FFF"
+                            android:fontFamily="sans-serif-black"
+                            android:layout_marginBottom="10dp"
+                            android:layout_marginTop="10dp"
+                            android:text="@string/birthday_birthday" />
+
+                        <TextView
+                            android:id="@+id/tv_inkognito_sub"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="sans-serif-black"
+                            android:text="Data on your love."
+                            android:textColor="#FFF"
+                            android:layout_marginBottom="20dp"
+                            android:textSize="10dp" />
+
+                        <CheckBox
+                            android:id="@+id/checkBox"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="sans-serif-black"
+                            android:textColor="#FFF"
+                            android:button="@null"
+                            android:drawableRight="?android:attr/listChoiceIndicatorMultiple"
+                            android:theme="@style/MyCheckBox"
+                            android:layout_marginBottom="0dp"
+                            android:text="@string/birthday_activate_service" />
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:background="@android:color/darker_gray"/>
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            android:layout_marginTop="0dp">
+
+                            <TextView
+                                android:id="@+id/tv_inkognito_sub_2"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="sans-serif-black"
+                                android:text="@string/birthday_date_of_birth"
+                                android:textColor="#FFF"
+                                android:layout_marginBottom="20dp"
+                                android:textSize="14dp" />
+
+
+                            <Button
+                                android:id="@+id/btn_pick_birthday"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="1dp"
+                                android:paddingHorizontal="10dp"
+                                android:background="@drawable/button_bg"
+                                android:textColor="#fff"
+                                android:textSize="14sp"
+                                android:capitalize="none"
+                                android:text="@string/birthday_the_date" />
+
+                        </LinearLayout>
+                        <TextView
+                            android:id="@+id/textView_next_reminder"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textColor="#FFF"
+                            android:textSize="12dp"
+                            android:textStyle="italic"
+                            android:text="" />
+
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_alignParentBottom="true">
+
+
+                        <TextView
+                            android:id="@+id/tv_btn_cancel"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="sans-serif-black"
+                            android:layout_weight="1"
+                            android:text="@string/button_cancel"
+                            android:textColor="#FFF"
+                            android:background="#000"
+                            android:textAlignment="center"
+                            android:textSize="30dp"
+                            android:layout_marginHorizontal="20dp"/>
+                        <TextView
+                            android:id="@+id/tv_btn_save"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="sans-serif-black"
+                            android:layout_weight="1"
+                            android:text="@string/button_save"
+                            android:textColor="#FFF"
+                            android:background="#000"
+                            android:textAlignment="center"
+                            android:textSize="30dp"
+                            android:layout_marginHorizontal="20dp"/>
+                    </LinearLayout>
+
+
+
+                </RelativeLayout>
+            </LinearLayout>
+                <!--
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/layout_activity_settings_bg"
+                android:padding="3dp"
+                android:layout_margin="13dp"
+                android:layout_alignParentBottom="true">
+
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="4dp"
+                    android:alpha=".75"
+                    android:background="@null"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/black_1" />
+
+            </RelativeLayout>
+            -->
+
+            </ScrollView>
+
+        </LinearLayout>
+
+
+    <!-- android:layout_alignParentBottom="true" -->
+    <!--
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+
+        <TextView
+            android:id="@+id/tv_btn_cancel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif-black"
+            android:layout_weight="1"
+            android:text="CANCEL"
+            android:textColor="#FFF"
+            android:background="#000"
+            android:textAlignment="center"
+            android:textSize="30dp"
+            android:layout_marginHorizontal="20dp"/>
+        <TextView
+            android:id="@+id/tv_btn_save"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif-black"
+            android:layout_weight="1"
+            android:text="SAVE"
+            android:textColor="#FFF"
+            android:background="#000"
+            android:textAlignment="center"
+            android:textSize="30dp"
+            android:layout_marginHorizontal="20dp"/>
+    </LinearLayout>
+-->
+</LinearLayout>
